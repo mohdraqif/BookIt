@@ -14,6 +14,8 @@ section {
     width: 300px;
     height: 60px;
     margin: auto auto 23px;
+    margin-top: 10px;
+    text-align: center;
     box-shadow: 0px 10px 15px rgba(3, 3, 3, 0.808);
 }
 .banner h2 {
@@ -171,12 +173,12 @@ section .section-title {
 .footer .footer-bottom {
     background-color: #355561;
     color:#feffff;
-    height: 50px;
+    height: 55px;
     text-align: center;
     position: relative;
     bottom: 0px;
     left: 0px;
-    padding-top: 13px;    
+    padding-top: 15px;    
     padding-bottom: 10px;    
 }
 
@@ -229,7 +231,7 @@ section .section-title {
 .footer .footer-content .contact-form .contact-box {
     background: #d0ecec;
     color: black;
-    margin: 0px 10px 10px;
+    margin: 0px 10px 20px;
     padding: 20px;
 }
 
