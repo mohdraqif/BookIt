@@ -163,14 +163,14 @@ section .section-title {
 }
 
 .footer {
-    background: #303036;
+    background: #40bfb9;
     color: #d3d3d3;
-    height: 390px;
+    height: 380px;
 }
 
 .footer .footer-bottom {
-    background-color: #343a40;
-    color:#686868;
+    background-color: #355561;
+    color:#feffff;
     height: 50px;
     text-align: center;
     position: relative;
@@ -180,8 +180,12 @@ section .section-title {
     padding-bottom: 10px;    
 }
 
+.footer .footer-content .footer-section h1{
+    color: black;
+}
+
 .footer .footer-content {
-    height: 340px;
+    height: 330px;
     text-align: center;
     display: flex;
 } 
@@ -192,8 +196,9 @@ section .section-title {
 }
 
 .footer .footer-content h1,
+.footer .footer-content p,
 .footer .footer-content h4 {
-    color: white;
+    color: black;
 }
 
 .footer .footer-content .about .contact span {
@@ -205,6 +210,10 @@ section .section-title {
     margin-top: 20px;
 }
 
+.footer .footer-content .about .logo a {
+    color: black;
+}
+
 .footer .footer-content .links ul a {
     display: block;
     margin-bottom: 10px;
@@ -212,14 +221,14 @@ section .section-title {
 }
 
 .footer .footer-content .links ul a:hover {
-    color: yellow;
+    color: #355561;
     margin-left: 15px;
     transition: all .2sec;
 }
 
 .footer .footer-content .contact-form .contact-box {
-    background: #272727;
-    color: #bebdbd;
+    background: #d0ecec;
+    color: black;
     margin: 0px 10px 10px;
     padding: 20px;
 }
@@ -238,7 +247,7 @@ section .section-title {
 }
 
 .footer .footer-content .contac-form .socials a:hover {
-    color: yellow;
+    color: #355561;
     border: 1px white;
     transition: all .2s;
 }
