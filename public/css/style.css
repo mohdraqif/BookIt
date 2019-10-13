@@ -9,6 +9,12 @@ section {
     padding: 50px 15px;
 }
 
+.second {
+    background-color: #d0ecec;
+    padding: 50px 50px;
+    margin: 0 60px;
+}
+
 .banner {
     background-color: #355561;
     width: 300px;
