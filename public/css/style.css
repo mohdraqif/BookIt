@@ -359,3 +359,22 @@ section .section-title {
       margin-top: 10vh; }
     }
   
+    #form {
+        background: #8bd4d1
+    }
+
+    .first {
+        background: #d0ecec;
+        width: 100%;
+        display: flex;
+    }
+
+    .login {
+        width: 80%;
+        height: 80%;
+    }
+
+    .signup {
+        width: 80%;
+        height: 80%;
+    }

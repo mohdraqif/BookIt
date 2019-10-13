@@ -14,8 +14,8 @@ app.get('/', (req, res) =>{
 app.get('/about', (req, res) => {
   res.render('about', {title: "This is 'About'"})
 })
-app.get('/sale', (req, res) =>{
-  res.render('sale', {title: "This is 'Sale'"})
+app.get('/store', (req, res) =>{
+  res.render('store', {title: "This is 'Store'"})
 })
 app.get('/login', (req, res) => {
   res.render('login', {title: 'LogIn/SignUp'})
