@@ -268,3 +268,15 @@ section .section-title {
     transform: scale(1.2);
 }
 
+.photo-gallery {
+    color:#313437;
+    background-color: none;
+  }
+
+  .photo-gallery .photos {
+    padding-bottom:10px;
+  }
+  
+  .photo-gallery .item {
+    padding-bottom:30px;
+  }
