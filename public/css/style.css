@@ -380,3 +380,56 @@ section .section-title {
         width: 80%;
         height: 80%;
     }
+
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 20px 110px;
+        margin: 50px;
+      }
+      
+      .flex-container > div {
+        background-color: #355561;
+        width: 200px;
+        height: 415px;
+        margin: 20px 20px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        box-shadow: 5px 13px 15px rgba(5, 5, 5, 0.815);
+    }
+
+      .flex-container .pic {
+          background-color: white;
+          margin: 15px 15px 0;
+          height: 30vh;
+      }
+      .flex-container .pic img {
+          opacity: 1;
+        object-fit: fill;
+        width: 170px;
+        height: 237px;
+        transition: transform .2s;
+    }
+      
+      .flex-container .pic img:hover {
+        transform: scale(.91);
+      }
+
+      .flex-container .info {
+          position: relative;
+          margin:  0 15px;
+          background-color: black; 
+          color: #feffff;
+      }
+
+      .flex-container .price {
+        position: relative;
+        margin:  0 15px;
+        background-color: white;
+        transition: transform .2s;
+    }
+
+    .flex-container .price p:hover{
+        transform: scale(1.1);
+    }

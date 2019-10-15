@@ -15,10 +15,16 @@ app.get('/about', (req, res) => {
   res.render('about', {title: "This is 'About'"})
 })
 app.get('/store', (req, res) =>{
-  res.render('store', {title: "This is 'Store'"})
+  res.render('store', {title: "// This whole page will become a POPUP //"})
 })
 app.get('/login', (req, res) => {
   res.render('login', {title: "This is 'Connect Us'"})
+})
+app.get('/buy', (req, res) => {
+  res.render('buy', {title: "This is 'Buy Store'"})
+})
+app.get('/sell', (req, res) => {
+  res.render('sell', {title: "This is 'Sell Store'"})
 })
 
 
