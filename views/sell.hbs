@@ -8,9 +8,62 @@
     <h2>HERE YOU GO</h2>
   </div>
 
-<div class="first">
+<div class="second">
+  <h4 style="text-align: center;">Please fill out the given fields</h4>
+  <div class="form">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="bmd-label-floating">BOOK TITLE:</label>
+      <input type="text" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1" class="bmd-label-floating">BOOK AUTHOR:</label>
+      <input type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1" class="bmd-label-floating">BOOK PUBLISHER:</label>
+      <input type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group">
+      <label for="exampleSelect1" class="bmd-label-floating">PUBLISHING YEAR:</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleTextarea" class="bmd-label-floating">ADDITIONAL DETAILS (if any):</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile" class="bmd-label-floating">BOOK IMAGE:</label>
+      <input type="file" class="form-control-file" id="exampleInputFile">
+    </div>
+    <br>
+    <button class="btn btn-default">Cancel</button>
+    <button type="submit" class="btn btn-primary btn-raised" style="background-color: #419fc2;border:none;">Submit</button>
+  </form><br>
 
-</div><br>
+<small>*Read the <a href="http://localhost:3000/terms" style="text-decoration: none;color:black"><strong>Terms & Conditons</strong></a> before selling the book.</small>
+
+  </div>
+</div><br><br>
+
+
 
   {{>footer}}
 </body>

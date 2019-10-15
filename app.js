@@ -26,6 +26,10 @@ app.get('/buy', (req, res) => {
 app.get('/sell', (req, res) => {
   res.render('sell', {title: "This is 'Sell Store'"})
 })
+app.get('/terms', (req, res) => {
+  res.render('terms', {title: "This is 'Terms & Conditions'"})
+})
+
 
 
 app.listen(3000, () => {
