@@ -18,7 +18,7 @@ app.get('/store', (req, res) =>{
   res.render('store', {title: "This is 'Store'"})
 })
 app.get('/login', (req, res) => {
-  res.render('login', {title: 'LogIn/SignUp'})
+  res.render('login', {title: "This is 'Connect Us'"})
 })
 
 

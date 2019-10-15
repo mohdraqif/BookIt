@@ -248,6 +248,8 @@ section .section-title {
 
 .footer .footer-content .contact-form .contact-box {
     background: #d0ecec;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
     margin: 0px 10px 28px;
     padding: 20px;
@@ -359,11 +361,11 @@ section .section-title {
       margin-top: 10vh; }
     }
   
-    #form {
+    .getus #form {
         background: #8bd4d1
     }
 
-    .first {
+    .getus {
         background: #d0ecec;
         width: 100%;
         display: flex;
