@@ -238,12 +238,12 @@ section .section-title {
     margin-bottom: 10px;
     font-size: 1.3rem;
     color: white;
+    transition: all .3s;
 }
 
 .footer .footer-content .links a:hover {
     color: #355561;
     margin-left: 15px;
-    transition: all .3s;
 }
 
 .footer .footer-content .contact-form .contact-box {
@@ -433,3 +433,56 @@ section .section-title {
     .flex-container .price p:hover{
         transform: scale(1.1);
     }
+
+
+    .flip-card {
+        background-color: transparent;
+        margin-left: 85px;
+        width: 300px;
+        height: 200px;
+        perspective: 600px; /* Remove this if you don't want the 3D effect */
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform .6s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {  
+        background-color: #8bd4d1;
+        width: 20vh;
+        height: 20vh;
+        border-radius: 50%;
+        color: black;
+      }
+      
+      /* Style the back side */
+      .flip-card-back {
+        background-color: #8bd4d1;
+        width: 20vh;
+        height: 20vh;
+        border-radius: 50%;
+        color: black;
+        padding-top: 20px;
+        border: 4px solid #355561;
+        transform: rotateY(180deg);
+      }
