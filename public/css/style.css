@@ -332,10 +332,13 @@ section .section-title {
       grid-area: bio;
       font-size: 1.3rem; }
     .about-info .job-1 {
-      grid-area: job1; }
+        box-shadow: 5px 13px 15px rgba(10, 9, 9, 0.815);
+        grid-area: job1; }
     .about-info .job-2 {
-      grid-area: job2; }
+        box-shadow: 5px 13px 15px rgba(0, 0, 0, 0.815);
+        grid-area: job2; }
     .about-info .job-3 {
+        box-shadow: 5px 13px 15px rgba(0, 0, 0, 0.815);
       grid-area: job3; }
     .about-info .job {
       background: #55c5bf;
