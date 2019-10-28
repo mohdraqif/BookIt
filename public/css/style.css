@@ -497,7 +497,7 @@ section .section-title {
         top: 0;
         left: 0;
         background-color: #355561;
-        background-color: rgba(53, 85, 97, .96);
+        background-color: rgba(53, 85, 97, .98);
         overflow-y: hidden;
         transition: 0.4s;
       }
