@@ -28,7 +28,7 @@
               <a class="nav-link" href="http://localhost:3000/about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/store">Store</a>
+              <a class="nav-link"><span style="cursor:pointer" onclick="openNav()">Store</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="http://localhost:3000/login">Log In</a>
@@ -41,3 +41,13 @@
         </div>
       </nav>
   </header>
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content" style="background-color: burlywood;">
+      <a href="http://localhost:3000/buy">I WANNA BUY</a>
+    </div>
+    <div class="overlay-content" style="background-color: aquamarine;">
+      <a href="http://localhost:3000/sell">I WANNA SELL</a>
+    </div>
+  </div>

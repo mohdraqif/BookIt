@@ -15,7 +15,7 @@
 				<div>
 					<a href="http://localhost:3000/about">About</a>
 					<a href="http://localhost:3000/sale">Sale</a>
-					<a href="http://localhost:3000/store">Store</a>
+          <a><span style="cursor:pointer" onclick="openNav()">Store</span></a>
 					<a href="http://localhost:3000/terms">Our Terms</a>
 					<a href="http://localhost:3000/terms">Support Us</a>
 				</div>
@@ -50,6 +50,15 @@
 		</div>
 	</div>
 </footer> 
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
 <script src="/Books/js/scripts.js"></script>
 </body>
 </html>
