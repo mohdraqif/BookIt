@@ -9,6 +9,10 @@ section {
     padding: 50px 15px;
 }
 
+.first p {
+    padding-left: 38px;
+}
+
 .second {
     background-color: #d0ecec;
     padding: 50px 50px;
@@ -26,7 +30,8 @@ section {
 }
 .banner h2 {
     color: #feffff;
-    padding: 10px 33px 10px;
+    padding: 10px 0 10px;
+    text-align: center;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -499,7 +504,7 @@ section .section-title {
         background-color: #355561;
         background-color: rgba(53, 85, 97, .98);
         overflow-y: hidden;
-        transition: 0.4s;
+        transition: 0.38s;
       }
       
       .overlay-content {

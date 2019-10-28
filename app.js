@@ -20,6 +20,9 @@ app.get('/store', (req, res) =>{
 app.get('/login', (req, res) => {
   res.render('login', {title: "This is 'Connect Us'"})
 })
+app.get('/sale', (req, res) => {
+  res.render('sale', {title: "This is 'Sale'"})
+})
 app.get('/buy', (req, res) => {
   res.render('buy', {title: "This is 'Buy Store'"})
 })
@@ -28,6 +31,9 @@ app.get('/sell', (req, res) => {
 })
 app.get('/terms', (req, res) => {
   res.render('terms', {title: "This is 'Terms & Conditions'"})
+})
+app.get('/support', (req, res) => {
+  res.render('support', {title: "This is 'Support Us'"})
 })
 
 
