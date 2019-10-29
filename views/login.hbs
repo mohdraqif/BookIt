@@ -1,106 +1,83 @@
-{{>header}}<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Books</title>
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
+<body>
   <h1 style="text-align: center;">{{title}}</h1><br> 
 
-  <div class="banner">
-    <h2>Be with us</h2>
-  </div>
-
-<div class="first">
-  <div class="getus">
-    <div class="login">
-      <div class="row mt-5">
-        <div class="col-md-6 m-auto">
-          <div id="form" class="card card-body">
-            <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
-            <form action="#">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="Enter Email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  class="form-control"
-                  placeholder="Enter Password"
-                />
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">Login</button>
-            </form>
-            <p class="lead mt-4">
-              No Account? <a href="#">Register</a>
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="banner">
+      <h2>Be with us</h2>
     </div>
-
-    <div class="signup">
-      <div class="row mt-5">
-        <div class="col-md-6 m-auto">
-          <div id="form" class="card card-body">
-            <h1 class="text-center mb-3">Register</h1>
-            <form action="#" method="POST">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input
-                  type="name"
-                  id="name"
-                  name="name"
-                  class="form-control"
-                  placeholder="Enter Name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="Enter Email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  class="form-control"
-                  placeholder="Create Password"
-                />
-              </div>
-              <div class="form-group">
-                <label for="password2">Confirm Password</label>
-                <input
-                  type="password"
-                  id="password2"
-                  name="password2"
-                  class="form-control"
-                  placeholder="Confirm Password"
-                />
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">
-                Register
-              </button>
-            </form>
-            <p class="lead mt-4">Have An Account? <a href="#">Login</a></p>
+    <br><br>
+  
+  <div class="four">
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forgot your password?</a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<br><br>
+  <br><br><br>
 
-  {{>footer}}
+  <script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+      container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+      container.classList.remove("right-panel-active");
+    });
+  </script>
+</body>
