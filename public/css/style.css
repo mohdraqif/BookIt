@@ -501,8 +501,9 @@ section .section-title {
         z-index: 10;
         top: 0;
         left: 0;
-        background-color: #355561;
-        background-color: rgba(53, 85, 97, .98);
+        opacity: .98;
+        background: -webkit-linear-gradient(to top, #3CD3AD, #4CB8C4);
+        background: linear-gradient(to top, #3CD3AD, #4CB8C4); 
         overflow-y: hidden;
         transition: 0.38s;
       }
