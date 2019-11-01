@@ -19,7 +19,7 @@ const User = mongoose.model('User', {       //makes a mongodb instance model nam
 
 const me = new User({
   name: 'Mohd.Raqif',
-  email: 'mohdraqif94@gmail.com'
+  email: 'mohdraqif1234@gmail.com'
 })
 
 me.save().then(() =>{
