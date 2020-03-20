@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js -e hbs,js,css"
+    "dev": "nodemon app.js -e hbs,js,css",
+    "deploy": "gh-pages -d views"
   },
   "author": "Mohd.Raqif",
   "license": "ISC",
+  "homepage": "https://mohdraqif.github.io/BookIt",
   "dependencies": {
     "ejs": "^2.7.1",
     "express": "^4.17.1",
